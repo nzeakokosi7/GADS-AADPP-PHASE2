@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="dialog_text_color">#616161</color>
+    <color name="text_title">#24252F</color>
+    <color name="text_sub_title">#2a2a30</color>
+    <color name="orange_primary">#FFB046</color>
+    <color name="orange_secondary">#EA8604</color>
+</resources>

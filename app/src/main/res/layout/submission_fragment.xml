@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.submission.SubmissionFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/gads"/>
+
+                            <ImageButton
+                                android:id="@+id/back_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/baseline_keyboard_backspace_white_24dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orange_primary"
+                            android:textSize="25sp"
+                            android:layout_gravity="center"
+                            android:text="Project Submission"/>
+
+                        <View
+                            android:layout_width="340dp"
+                            android:layout_height="1.5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/radial_underline"/>
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:fillViewport="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/first_name_input"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:hint="First Name"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/edit_text_background">
+
+
+                        <requestFocus />
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/last_name_input"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:hint="Last Name"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:background="@drawable/edit_text_background" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp"
+                    android:padding="15dp"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/edit_text_background"/>
+
+                <EditText
+                    android:id="@+id/github_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="50dp"
+                    android:padding="15dp"
+                    android:hint="Project on GITHUB (link)"
+                    android:inputType="textUri"
+                    android:background="@drawable/edit_text_background"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_weight="0.4">
+
+           <TextView
+               android:id="@+id/submit_btn"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:text="Submit"
+               android:textColor="@android:color/white"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:background="@drawable/submit_btn_bg"/>
+       </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/background_overlay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        android:background="#52ffffff"/>-->
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
