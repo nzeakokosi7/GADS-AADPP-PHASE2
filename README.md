@@ -1,4 +1,4 @@
-![alt text](https://github.com/nzeakokosi7/GADS-AADPP-PHASE2/blob/master/device-2020-09-11-045506.png?raw=true)
+![alt text](https://github.com/nzeakokosi7/GADS-AADPP-PHASE2/blob/master/device-2020-09-11-045506.png?raw=true =100x20)
 ![alt text](https://github.com/nzeakokosi7/GADS-AADPP-PHASE2/blob/master/device-2020-09-11-045527.png?raw=true)
 ![alt text](https://github.com/nzeakokosi7/GADS-AADPP-PHASE2/blob/master/device-2020-09-11-045541.png?raw=true)
 ![alt text](https://github.com/nzeakokosi7/GADS-AADPP-PHASE2/blob/master/device-2020-09-11-045614.png?raw=true)
